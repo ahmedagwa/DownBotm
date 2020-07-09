@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="commands.css">
+<link rel="icon" type="image/png" href="DownBot.png" />
+<title>Downbot Commands</title>
+</head>
+<body>
+<div class="row">
+  <div class="left" style="background-color:#36393f;">
+    <h2 class="titletext">DownBot Commands</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search for command 🔍" title="Type in a category">
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'London')">All</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">System</button>
+      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Music</button>
+      <button class="tablinks" onclick="openCity(event, 'Cairo')">Ticket</button>
+    </div>
+    
+    <div id="London" class="tabcontent">
+      <ul id="myMenu">
+        <!--SYSTEM-->
+        <li><a href="#"><h2 class="titletext1">@help</h2><span class="title1"> - Show All System Commands</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@ping</h2><span class="title1"> - Show Bot Ping</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@profile</h2><span class="title1"> - Show Profile Info</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@user</h2><span class="title1"> - Show User Info</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@server</h2><span class="title1"> - Show Server Info</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@servers</h2><span class="title1"> - Show Servers That Uses Downbot</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@top</h2><span class="title1"> - Show Top Members</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@mute</h2><span class="title1"> - Mute A Member From Text Channels</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@unmute</h2><span class="title1"> - Unmute A Member From Text Channels</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@move</h2><span class="title1"> - Moves a member to a voice channel.</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@lock</h2><span class="title1"> - Disables @everyone from sending messages in specific channel.</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@unlock</h2><span class="title1"> - Removes denied sending messages from @everyone in specific channel.</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@clear</h2><span class="title1"> - Clear Messages From Channel</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@ban</h2><span class="title1"> - Bans A Member</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@unban</h2><span class="title1"> - Unbans A Member</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@kick</h2><span class="title1"> - Kick A member</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@coins</h2><span class="title1"> - Show How Many Coins You Have</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@daily</h2><span class="title1"> - Give You A Bit Of Coins Every 24H</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@roles</h2><span class="title1"> - Show All Roles</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@avatar</h2><span class="title1"> - Show Profile Photo Of A Member</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@rerole</h2><span class="title1"> - Take A Role</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@date</h2><span class="title1"> - Give Info Of Date</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@changelanguage</h2><span class="title1"> - Change Language Of The Bot</span></a></li>
+        <!--MUSIC-->
+        <li><a href="#"><h2 class="titletext1">m@help</h2><span class="title1"> - Show All Music Commands</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@play</h2><span class="title1"> - Play Music</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@skip</h2><span class="title1"> - Skip The Current Music</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@stop</h2><span class="title1"> - Stop The Current Music</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@pause</h2><span class="title1"> - Pause Current Music</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@resume</h2><span class="title1"> - Resume The Paused Music</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@volume</h2><span class="title1"> - Change The Music Volume</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@queue</h2><span class="title1"> - Show The Music Queue</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@repeat</h2><span class="title1"> - Turn On / Off Repeat Mode</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@forceskip</h2><span class="title1"> - Force Skip The Current Music</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@skipto</h2><span class="title1"> - Skip To Specific Music</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@nowplaying</h2><span class="title1"> - Show The Current Playing Music</span></a></li>
+        <!--TICKET-->
+        <li><a href="#"><h2 class="titletext1">t@help</h2><span class="title1"> - Show All Ticket Commands</span></a></li>
+        <li><a href="#"><h2 class="titletext1">t@open</h2><span class="title1"> - Open New Ticket</span></a></li>
+        <li><a href="#"><h2 class="titletext1">t@close</h2><span class="title1"> - Close Your Ticket</span></a></li>
+        <li><a href="#"><h2 class="titletext1">t@changelanguage</h2><span class="title1"> - Change Language Of The Bot</span></a></li>
+      </ul>
+    </div>
+    
+    <div id="Paris" class="tabcontent">
+      <ul id="myMenu">
+        <!--SYSTEM-->
+        <li><a href="#"><h2 class="titletext1">@help</h2><span class="title1"> - Show All System Commands</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@ping</h2><span class="title1"> - Show Bot Ping</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@profile</h2><span class="title1"> - Show Profile Info</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@user</h2><span class="title1"> - Show User Info</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@server</h2><span class="title1"> - Show Server Info</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@servers</h2><span class="title1"> - Show Servers That Uses Downbot</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@top</h2><span class="title1"> - Show Top Members</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@mute</h2><span class="title1"> - Mute A Member From Text Channels</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@unmute</h2><span class="title1"> - Unmute A Member From Text Channels</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@move</h2><span class="title1"> - Moves a member to a voice channel.</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@lock</h2><span class="title1"> - Disables @everyone from sending messages in specific channel.</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@unlock</h2><span class="title1"> - Removes denied sending messages from @everyone in specific channel.</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@clear</h2><span class="title1"> - Clear Messages From Channel</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@ban</h2><span class="title1"> - Bans A Member</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@unban</h2><span class="title1"> - Unbans A Member</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@kick</h2><span class="title1"> - Kick A member</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@coins</h2><span class="title1"> - Show How Many Coins You Have</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@daily</h2><span class="title1"> - Give You A Bit Of Coins Every 24H</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@roles</h2><span class="title1"> - Show All Roles</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@avatar</h2><span class="title1"> - Show Profile Photo Of A Member</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@rerole</h2><span class="title1"> - Take A Role</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@date</h2><span class="title1"> - Give Info Of Date</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@changelanguage</h2><span class="title1"> - Change Language Of The Bot</span></a></li>
+      </ul>
+    </div>
+    
+    <div id="Tokyo" class="tabcontent">
+      <ul id="myMenu">
+        <li><a href="#"><h2 class="titletext1">m@help</h2><span class="title1"> - Show All Music Commands</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@play</h2><span class="title1"> - Play Music</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@skip</h2><span class="title1"> - Skip The Current Music</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@stop</h2><span class="title1"> - Stop The Current Music</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@pause</h2><span class="title1"> - Pause Current Music</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@resume</h2><span class="title1"> - Resume The Paused Music</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@volume</h2><span class="title1"> - Change The Music Volume</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@queue</h2><span class="title1"> - Show The Music Queue</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@repeat</h2><span class="title1"> - Turn On / Off Repeat Mode</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@forceskip</h2><span class="title1"> - Force Skip The Current Music</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@skipto</h2><span class="title1"> - Skip To Specific Music</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@nowplaying</h2><span class="title1"> - Show The Current Playing Music</span></a></li>
+        <!--TICKET-->
+      </ul>
+    </div>
+    
+    <div id="Cairo" class="tabcontent">
+      <ul id="myMenu">
+        <li><a href="#"><h2 class="titletext1">t@help</h2><span class="title1"> - Show All Ticket Commands</span></a></li>
+        <li><a href="#"><h2 class="titletext1">t@open</h2><span class="title1"> - Open New Ticket</span></a></li>
+        <li><a href="#"><h2 class="titletext1">t@close</h2><span class="title1"> - Close Your Ticket</span></a></li>
+        <li><a href="#"><h2 class="titletext1">t@changelanguage</h2><span class="title1"> - Change Language Of The Bot</span></a></li>
+      </ul>
+    </div>
+    
+
+  </div>
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+
+</body>
+</html>
