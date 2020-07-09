@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="commands.css">
+<link rel="icon" type="image/png" href="DownBot.png" />
+<title>Downbot أوامر</title>
+</head>
+<body>
+<div class="row">
+  <div class="left" style="background-color:#36393f;">
+    <h2 class="titletext">DownBot Commands</h2>
+    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search for command 🔍" title="Type in a category">
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'London')">All</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">System</button>
+      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Music</button>
+      <button class="tablinks" onclick="openCity(event, 'Cairo')">Ticket</button>
+    </div>
+    
+    <div id="London" class="tabcontent">
+      <ul id="myMenu">
+        <!--SYSTEM-->
+        <li><a href="#"><h2 class="titletext1">@help</h2><span class="title1"> - إظهار أوامر بوت السيستم</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@ping</h2><span class="title1"> - إظهار البينج</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@profile</h2><span class="title1"> - إظهار معلومات حساب</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@user</h2><span class="title1"> - إظهار معلومات مستخدم</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@server</h2><span class="title1"> - إظهار معلومات السيرفر</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@servers</h2><span class="title1"> - إظهار جميع السيرفرات الموجود بها البوت</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@top</h2><span class="title1"> - أظهار قائمة متصدين اللائحة</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@mute</h2><span class="title1"> - إسكات عضو من الكتابة في روم</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@unmute</h2><span class="title1"> - فك اسكات عضو من الكتابة في روم</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@move</h2><span class="title1"> - سحب عضو لروم الصوتي</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@lock</h2><span class="title1"> - قفل الروم </span></a></li>
+        <li><a href="#"><h2 class="titletext1">@unlock</h2><span class="title1"> - فك اقفال الروم</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@clear</h2><span class="title1"> - حذف جميع الرسائل في الروم</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@ban</h2><span class="title1"> - حظر عضو</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@unban</h2><span class="title1"> - فك حظر العضو</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@kick</h2><span class="title1"> - طرد عضو</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@coins</h2><span class="title1"> - إظهار كمية المال لديك</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@daily</h2><span class="title1"> - اعطاء عملات يومية</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@roles</h2><span class="title1"> - إظهار جميع الرتب</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@avatar</h2><span class="title1"> - إظهار صورة عضو</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@rerole</h2><span class="title1"> - سحب رتبة عضو</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@date</h2><span class="title1"> - إعطاء معلومات عن التاريخ</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@changelanguage</h2><span class="title1"> - تغير لغة بوت السيستم/span></a></li>
+        <!--MUSIC-->
+        <li><a href="#"><h2 class="titletext1">m@help</h2><span class="title1"> - إظهار جميع اوامر بوت الموسيقي</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@play</h2><span class="title1"> - تشغيل الموسيقي</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@skip</h2><span class="title1"> - تخطي المقطع الصوتي الحالي</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@stop</h2><span class="title1"> - توقف المقطع الصوتي الحالي</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@pause</h2><span class="title1"> - توقف مؤقت للمقطع الصوتي الحالي</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@resume</h2><span class="title1"> - إعادة تشغيل المقطع الصوتي الحالي</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@volume</h2><span class="title1"> - تغير مستوي الصوت</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@queue</h2><span class="title1"> - إظهار المقاطع الصوتية في طابور التشغيل</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@repeat</h2><span class="title1"> - إيقاف / تشغيل وضعية التكرار</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@forceskip</h2><span class="title1"> - تخطي إجباري للمقطع الصوتي الحالي</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@skipto</h2><span class="title1"> - تخطي إلي مقطع صوتي محدد</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@nowplaying</h2><span class="title1"> - إظهار المقطع الصوتي الحالي</span></a></li>
+        <!--TICKET-->
+        <li><a href="#"><h2 class="titletext1">t@help</h2><span class="title1"> - إظهار جميع أوامر بوت التيكت</span></a></li>
+        <li><a href="#"><h2 class="titletext1">t@open</h2><span class="title1"> - فتح تذكرة جديدة</span></a></li>
+        <li><a href="#"><h2 class="titletext1">t@close</h2><span class="title1"> - إغلاق تذكرة</span></a></li>
+        <li><a href="#"><h2 class="titletext1">t@changelanguage</h2><span class="title1"> - تغير لغة بوت التيكت</span></a></li>
+      </ul>
+    </div>
+    
+    <div id="Paris" class="tabcontent">
+      <ul id="myMenu">
+        <li><a href="#"><h2 class="titletext1">@help</h2><span class="title1"> - إظهار أوامر بوت السيستم</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@ping</h2><span class="title1"> - إظهار البينج</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@profile</h2><span class="title1"> - إظهار معلومات حساب</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@user</h2><span class="title1"> - إظهار معلومات مستخدم</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@server</h2><span class="title1"> - إظهار معلومات السيرفر</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@servers</h2><span class="title1"> - إظهار جميع السيرفرات الموجود بها البوت</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@top</h2><span class="title1"> - أظهار قائمة متصدين اللائحة</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@mute</h2><span class="title1"> - إسكات عضو من الكتابة في روم</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@unmute</h2><span class="title1"> - فك اسكات عضو من الكتابة في روم</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@move</h2><span class="title1"> - سحب عضو لروم الصوتي</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@lock</h2><span class="title1"> - قفل الروم </span></a></li>
+        <li><a href="#"><h2 class="titletext1">@unlock</h2><span class="title1"> - فك اقفال الروم</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@clear</h2><span class="title1"> - حذف جميع الرسائل في الروم</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@ban</h2><span class="title1"> - حظر عضو</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@unban</h2><span class="title1"> - فك حظر العضو</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@kick</h2><span class="title1"> - طرد عضو</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@coins</h2><span class="title1"> - إظهار كمية المال لديك</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@daily</h2><span class="title1"> - اعطاء عملات يومية</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@roles</h2><span class="title1"> - إظهار جميع الرتب</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@avatar</h2><span class="title1"> - إظهار صورة عضو</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@rerole</h2><span class="title1"> - سحب رتبة عضو</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@date</h2><span class="title1"> - إعطاء معلومات عن التاريخ</span></a></li>
+        <li><a href="#"><h2 class="titletext1">@changelanguage</h2><span class="title1"> - تغير لغة بوت السيستم/span></a></li>
+      </ul>
+    </div>
+    
+    <div id="Tokyo" class="tabcontent">
+      <ul id="myMenu">
+        <li><a href="#"><h2 class="titletext1">m@help</h2><span class="title1"> - إظهار جميع اوامر بوت الموسيقي</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@play</h2><span class="title1"> - تشغيل الموسيقي</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@skip</h2><span class="title1"> - تخطي المقطع الصوتي الحالي</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@stop</h2><span class="title1"> - توقف المقطع الصوتي الحالي</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@pause</h2><span class="title1"> - توقف مؤقت للمقطع الصوتي الحالي</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@resume</h2><span class="title1"> - إعادة تشغيل المقطع الصوتي الحالي</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@volume</h2><span class="title1"> - تغير مستوي الصوت</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@queue</h2><span class="title1"> - إظهار المقاطع الصوتية في طابور التشغيل</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@repeat</h2><span class="title1"> - إيقاف / تشغيل وضعية التكرار</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@forceskip</h2><span class="title1"> - تخطي إجباري للمقطع الصوتي الحالي</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@skipto</h2><span class="title1"> - تخطي إلي مقطع صوتي محدد</span></a></li>
+        <li><a href="#"><h2 class="titletext1">m@nowplaying</h2><span class="title1"> - إظهار المقطع الصوتي الحالي</span></a></li>
+      </ul>
+    </div>
+
+    <div id="Cairo" class="tabcontent">
+      <ul id="myMenu">
+        <li><a href="#"><h2 class="titletext1">t@help</h2><span class="title1"> - إظهار جميع أوامر بوت التيكت</span></a></li>
+        <li><a href="#"><h2 class="titletext1">t@open</h2><span class="title1"> - فتح تذكرة جديدة</span></a></li>
+        <li><a href="#"><h2 class="titletext1">t@close</h2><span class="title1"> - إغلاق تذكرة</span></a></li>
+        <li><a href="#"><h2 class="titletext1">t@changelanguage</h2><span class="title1"> - تغير لغة بوت التيكت</span></a></li>
+      </ul>
+    </div>
+
+  </div>
+<script>
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+<script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+
+</body>
+</html>
