@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #36393f;
+}
+  
+* {
+    box-sizing: border-box;
+}
+  
+/* Create a column layout with Flexbox */
+.row {
+    display: flex;
+}
+  
+/* Left column (menu) */
+.left {
+    flex: 35%;
+    padding: 15px 0;
+}
+  
+.left h2 {
+    padding-left: 8px;
+}
+  
+/* Right column (page content) */
+.right {
+    flex: 65%;
+    padding: 15px;
+}
+  
+/* Style the search box */
+#mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid #1b1b1b;
+}
+  
+/* Style the navigation menu inside the left column */
+#myMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #2f3136;
+}
+  
+#myMenu li a {
+    border-bottom: 1px solid #1b1b1b;
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    display: block
+}
+  
+#myMenu li a:hover {
+    background-color: black;
+    color: black;
+    box-shadow: 2px 2px;
+    transition: 1s;
+}
+.titletext{
+    font-weight: 600;
+    color: #eee;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.titletext1{
+    font-weight: 600;
+    color: #eee;
+    font-size: 2em;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.title1{
+    font-weight: 600;
+    color: #eee;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: #2f3136;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    border-left: 1px solid #1b1b1b;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: rgb(207, 78, 78);
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: rgb(207, 78, 78);
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
